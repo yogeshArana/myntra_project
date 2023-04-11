@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myntra_project/presentation/screen/page/screen.dart';
 
-void main(){
+void main() {
   runApp(const MyApp());
 }
 
@@ -15,3 +15,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+//Hello World
