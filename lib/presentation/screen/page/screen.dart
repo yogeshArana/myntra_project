@@ -1,7 +1,9 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:myntra_project/presentation/comman_widget/container.dart';
 import 'package:myntra_project/presentation/comman_widget/menu.dart';
 import 'package:myntra_project/presentation/screen/widget/frist_screen.dart';
+import 'package:myntra_project/presentation/screen/widget/page_view.dart';
 import 'package:myntra_project/utilite/icon.dart';
 
 class FirstScreen extends StatefulWidget {
@@ -69,6 +71,34 @@ class _FirstScreenState extends State<FirstScreen> {
             )
           ],
         ),
+        const SizedBox(
+          height: 8,
+        ),
+        Expanded(
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: const Image(
+              height: 150,
+              width: double.infinity,
+              image: NetworkImage(
+                'https://m.media-amazon.com/images/G/31/img21/MA2023/Brand_launch/FTX_Cultsport/Spotlight_under599._CB594503708_.gif',
+              ),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+        Expanded(
+          child: SizedBox(
+            height: 50,
+            child: PageView(
+              scrollDirection: Axis.horizontal,
+              dragStartBehavior: DragStartBehavior.down,
+              reverse: true,
+              allowImplicitScrolling: true,
+              children: const [Image1(), Image2()],
+            ),
+          ),
+        )
       ],
     )));
   }

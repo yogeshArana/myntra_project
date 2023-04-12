@@ -29,7 +29,7 @@ Widget salesbanner({
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 5,
         ),
         Text(
