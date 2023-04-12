@@ -1,7 +1,3 @@
-
-
-
-
 import 'package:flutter/cupertino.dart';
 
 Widget appbar({
@@ -45,5 +41,19 @@ Widget appbar({
             width: 20,
           ),
         ],
+      ),
+    );
+
+Widget limitedtimebanner(
+        {required double height,
+        required double width,
+        required NetworkImage image}) =>
+    // ignore: sized_box_for_whitespace
+    Container(
+      height: height,
+      width: width,
+      child: Image(
+        image: image,
+        fit: BoxFit.fill,
       ),
     );

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:myntra_project/presentation/comman_widget/container.dart';
 import 'package:myntra_project/presentation/comman_widget/menu.dart';
 import 'package:myntra_project/presentation/screen/widget/frist_screen.dart';
+import 'package:myntra_project/presentation/screen/widget/limited_offer.dart';
 import 'package:myntra_project/presentation/screen/widget/page_view.dart';
 import 'package:myntra_project/utilite/icon.dart';
 
@@ -82,7 +83,7 @@ class _FirstScreenState extends State<FirstScreen> {
           ),
           fit: BoxFit.cover,
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Expanded(
@@ -95,8 +96,26 @@ class _FirstScreenState extends State<FirstScreen> {
               allowImplicitScrolling: true,
               children: const [Image1(), Image2()],
             ),
-          ),
-        )
+        ),
+        ),
+        limitedtimebanner(
+            height: 80,
+            width: double.infinity,
+            image: const NetworkImage(
+              'https://rukminim1.flixcart.com/flap/100/100/image/a6c01a03797c9dbb.jpg?q=50',
+            )),
+        limitedoffer1(
+            height: 200,
+            width: 170,
+            colors1: Colors.white,
+            colors2: Colors.white,
+            colors3: Colors.green),
+        limitedoffer2(
+            height: 200,
+            width: 170,
+            colors1: Colors.white,
+            colors2: Colors.white,
+            colors3: Colors.green)
       ],
     )));
   }
