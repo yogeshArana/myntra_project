@@ -74,18 +74,16 @@ class _FirstScreenState extends State<FirstScreen> {
         const SizedBox(
           height: 8,
         ),
-        Expanded(
-          child: SingleChildScrollView(
-            scrollDirection: Axis.vertical,
-            child: const Image(
-              height: 150,
-              width: double.infinity,
-              image: NetworkImage(
-                'https://m.media-amazon.com/images/G/31/img21/MA2023/Brand_launch/FTX_Cultsport/Spotlight_under599._CB594503708_.gif',
-              ),
-              fit: BoxFit.cover,
-            ),
+        const Image(
+          height: 150,
+          width: double.infinity,
+          image: NetworkImage(
+            'https://m.media-amazon.com/images/G/31/img21/MA2023/Brand_launch/FTX_Cultsport/Spotlight_under599._CB594503708_.gif',
           ),
+          fit: BoxFit.cover,
+        ),
+        SizedBox(
+          height: 10,
         ),
         Expanded(
           child: SizedBox(
