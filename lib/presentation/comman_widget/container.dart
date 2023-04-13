@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/widgets.dart';
 
 Widget appbar({
   required double height,
   required double width,
-  required NetworkImage image,
+  required String image,
   required IconData icon,
   required IconData icon1,
   required IconData icon2,
@@ -20,7 +22,7 @@ Widget appbar({
       child: Row(
         children: [
           Icon(icon),
-          Image(image: image),
+          Image(image: NetworkImage(image)),
           const SizedBox(
             width: 80,
           ),
@@ -61,5 +63,19 @@ Widget festival(
           Text(categories),
           Text(price)
         ],
+      ),
+    );
+
+Widget limitedtimebanner(
+        {required double height,
+        required double width,
+        required NetworkImage image}) =>
+    // ignore: sized_box_for_whitespace
+    Container(
+      height: height,
+      width: width,
+      child: Image(
+        image: image,
+        fit: BoxFit.fill,
       ),
     );
