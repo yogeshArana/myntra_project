@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
 import 'package:myntra_project/data/model/app_menu.dart';
+import 'package:myntra_project/data/model/featured_brand.dart';
 
 Widget appbar({
   required double height,
@@ -124,3 +125,18 @@ Widget limitedtimebanner(
         fit: BoxFit.fill,
       ),
     );
+
+Widget futurebrands({
+  required double height,
+  required double width,
+}) =>
+    Row(
+        children: List.generate(
+            futurebranddata.length,
+            (index) => Container(
+                  height: height,
+                  width: width,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: NetworkImage(futurebranddata[index].image))),
+                )));
