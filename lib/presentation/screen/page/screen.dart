@@ -121,6 +121,7 @@ class _FirstScreenState extends State<FirstScreen> {
                   colors1: Colors.white,
                   colors2: Colors.white,
                   colors3: Colors.green),
+                  
             ],
           ),
         ),
