@@ -75,19 +75,19 @@ List<FestivalOffer> festivalOffer = [
           'https://m.media-amazon.com/images/I/41JuVoISnpL._AC_UF480,600_SR480,600_.jpg',
       categorirs: 'Kids OccasionWear',
       price: 'Under 999'),
-  FestivalOffer(
-      image:
-          'https://m.media-amazon.com/images/I/41EP5jDBpeL._AC_UF480,600_SR480,600_.jpg',
-      categorirs: 'Trendiest Ethnic Styles',
-      price: 'Under 1299'),
-  FestivalOffer(
-      image:
-          'https://m.media-amazon.com/images/I/91LjdIio2wL._AC_UL480_QL65_.jpg',
-      categorirs: 'Stunning Ethnic Picks',
-      price: 'Under 999'),
-  FestivalOffer(
-      image:
-          'https://m.media-amazon.com/images/S/aplus-media-library-service-media/c222ec91-5c9d-4f85-803c-8da721c32886.__CR65,0,970,600_PT0_SX970_V1___.jpg',
-      categorirs: 'Gorgeous Jewellery',
-      price: 'Under 399')
+  // FestivalOffer(
+  //     image:
+  //         'https://m.media-amazon.com/images/I/41EP5jDBpeL._AC_UF480,600_SR480,600_.jpg',
+  //     categorirs: 'Trendiest Ethnic Styles',
+  //     price: 'Under 1299'),
+  // FestivalOffer(
+  //     image:
+  //         'https://m.media-amazon.com/images/I/91LjdIio2wL._AC_UL480_QL65_.jpg',
+  //     categorirs: 'Stunning Ethnic Picks',
+  //     price: 'Under 999'),
+  // FestivalOffer(
+  //     image:
+  //         'https://m.media-amazon.com/images/S/aplus-media-library-service-media/c222ec91-5c9d-4f85-803c-8da721c32886.__CR65,0,970,600_PT0_SX970_V1___.jpg',
+  //     categorirs: 'Gorgeous Jewellery',
+  //     price: 'Under 399')
 ];
