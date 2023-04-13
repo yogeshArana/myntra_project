@@ -13,7 +13,7 @@ Widget limitedoffer1({
             limitedofferdata.length,
             (index) => SizedBox(
                   child: Container(
-                    margin: const EdgeInsets.only(left: 10),
+                    
                     height: height,
                     width: width,
                     decoration: BoxDecoration(
@@ -67,7 +67,7 @@ Widget limitedoffer2({
             limitedofferdata.length,
             (index) => SizedBox(
                   child: Container(
-                    margin: const EdgeInsets.only(left: 10),
+                    
                     height: height,
                     width: width,
                     decoration: BoxDecoration(

@@ -104,20 +104,20 @@ class _FirstScreenState extends State<FirstScreen> {
                 ),
               ),
               limitedtimebanner(
-                  height: 80,
+                  height: 100,
                   width: double.infinity,
                   image: const NetworkImage(
-                    'https://rukminim1.flixcart.com/flap/100/100/image/a6c01a03797c9dbb.jpg?q=50',
+                    'https://images.pexels.com/photos/139309/pexels-photo-139309.jpeg?auto=compress&cs=tinysrgb&w=600',
                   )),
               limitedoffer1(
                   height: 200,
-                  width: 170,
+                  width: 180,
                   colors1: Colors.white,
                   colors2: Colors.white,
                   colors3: Colors.green),
               limitedoffer2(
                   height: 200,
-                  width: 170,
+                  width: 180,
                   colors1: Colors.white,
                   colors2: Colors.white,
                   colors3: Colors.green),
