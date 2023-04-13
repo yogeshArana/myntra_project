@@ -1,9 +1,11 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/widgets.dart';
 
 Widget appbar({
   required double height,
   required double width,
-  required NetworkImage image,
+  required String image,
   required IconData icon,
   required IconData icon1,
   required IconData icon2,
@@ -20,7 +22,7 @@ Widget appbar({
       child: Row(
         children: [
           Icon(icon),
-          Image(image: image),
+          Image(image: NetworkImage(image)),
           const SizedBox(
             width: 80,
           ),
@@ -40,6 +42,26 @@ Widget appbar({
           const SizedBox(
             width: 20,
           ),
+        ],
+      ),
+    );
+
+Widget festival(
+        {required double height,
+        required double width,
+        required String productImage,
+        required String categories,
+        required String price,
+        required Color contanirColor}) =>
+    Container(
+      height: height,
+      width: width,
+      color: contanirColor,
+      child: Column(
+        children: [
+          Image(image: NetworkImage(productImage)),
+          Text(categories),
+          Text(price)
         ],
       ),
     );
