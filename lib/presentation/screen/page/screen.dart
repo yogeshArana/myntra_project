@@ -96,7 +96,7 @@ class _FirstScreenState extends State<FirstScreen> {
               allowImplicitScrolling: true,
               children: const [Image1(), Image2()],
             ),
-        ),
+          ),
         ),
         limitedtimebanner(
             height: 80,
