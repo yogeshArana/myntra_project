@@ -103,24 +103,36 @@ class _FirstScreenState extends State<FirstScreen> {
                   children: const [Image1(), Image2()],
                 ),
               ),
+              const SizedBox(
+                height: 10,
+              ),
               limitedtimebanner(
                   height: 100,
                   width: double.infinity,
                   image: const NetworkImage(
                     'https://images.pexels.com/photos/3476860/pexels-photo-3476860.jpeg?auto=compress&cs=tinysrgb&w=600',
                   )),
+               const  SizedBox(
+                height: 10,
+              ),
               limitedoffer1(
                   height: 200,
                   width: 180,
                   colors1: Colors.white,
                   colors2: Colors.white,
                   colors3: Colors.green),
+            const  SizedBox(
+                height: 10,
+              ),
               limitedoffer2(
                   height: 200,
                   width: 180,
                   colors1: Colors.white,
                   colors2: Colors.white,
                   colors3: Colors.green),
+            const  SizedBox(
+                height: 10,
+              ),
               festival(height: 200, width: 120, contanirColor: Colors.white),
               festival1(height: 200, width: 120, contanirColor: Colors.white),
               hotStyles(
