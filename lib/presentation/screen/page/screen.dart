@@ -32,9 +32,8 @@ class _FirstScreenState extends State<FirstScreen> {
                 icon3: AppBar1.favirate,
                 icon4: AppBar1.cart),
             preferredSize: const Size(100, 80)),
-        body: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Column(children: [
+        body: Column(
+          children: [
             // appbar(
             //     height: 50,
             //     width: double.infinity,
@@ -51,6 +50,7 @@ class _FirstScreenState extends State<FirstScreen> {
             const SizedBox(
               height: 20,
             ),
+
             Row(
               children: [
                 const SizedBox(
@@ -132,7 +132,7 @@ class _FirstScreenState extends State<FirstScreen> {
                 colors1: Colors.white,
                 colors2: Colors.white,
                 colors3: Colors.green),
-          ]),
+          ],
         ),
       ),
     );

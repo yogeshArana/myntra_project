@@ -8,22 +8,25 @@ Widget appcontainer({
   //required String  image,
   // required List<dynamic> appmenudata,
 }) =>
-    SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
-        children: List.generate(
-          appmenudata.length,
-          (index) => Column(
-            children: [
-              CircleAvatar(
-                radius: radius,
-                backgroundImage: NetworkImage(appmenudata[index].image),
-              ),
-              Text(
-                appmenudata[index].name,
-                style: style,
-              )
-            ],
+    SizedBox(
+      height: 100,
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: List.generate(
+            appmenudata.length,
+            (index) => Column(
+              children: [
+                CircleAvatar(
+                  radius: radius,
+                  backgroundImage: NetworkImage(appmenudata[index].image),
+                ),
+                Text(
+                  appmenudata[index].name,
+                  style: style,
+                )
+              ],
+            ),
           ),
         ),
       ),
