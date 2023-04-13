@@ -102,3 +102,53 @@ List<FestivalOffer1> festivalOffer1 = [
       categorirs: 'Gorgeous Jewellery',
       price: 'Under 399')
 ];
+
+class HotRatedStyles {
+  String image;
+  String price;
+  String categorirs;
+  HotRatedStyles(
+      {required this.image, required this.categorirs, required this.price});
+}
+
+List<HotRatedStyles> hotRatedStyles = [
+  HotRatedStyles(
+      image:
+          'https://m.media-amazon.com/images/I/71uh0lBjihL._AC_UL480_FMwebp_QL65_.jpg',
+      categorirs: 'Shorts',
+      price: 'Under 499'),
+  HotRatedStyles(
+      image:
+          'https://m.media-amazon.com/images/I/81tKekqkQEL._AC_UL480_FMwebp_QL65_.jpg',
+      categorirs: 'Jeans',
+      price: 'Under 699'),
+  HotRatedStyles(
+      image:
+          'https://m.media-amazon.com/images/I/71xto1H9UFL._SY695._SX._UX._SY._UY_.jpg',
+      categorirs: 'Sports Shoes',
+      price: 'Under 1299'),
+];
+
+class HotRatedStyles1 {
+  String image;
+  String price;
+  String categorirs;
+  HotRatedStyles1(
+      {required this.image, required this.categorirs, required this.price});
+}
+
+List<HotRatedStyles1> hotRatedStyles1 = [
+  HotRatedStyles1(
+      image: 'https://m.media-amazon.com/images/I/91-ybyeS8RL._UY741_.jpg',
+      categorirs: 'Shirts',
+      price: 'Under 599'),
+  HotRatedStyles1(
+      image:
+          'https://m.media-amazon.com/images/I/61R11o1DC+S._AC_UL480_FMwebp_QL65_.jpg',
+      categorirs: 'Track Pants',
+      price: 'Under 699'),
+  HotRatedStyles1(
+      image: 'https://m.media-amazon.com/images/I/618CJ9mF8UL._UY741_.jpg',
+      categorirs: 'Sarees',
+      price: 'Under 999'),
+];

@@ -140,3 +140,93 @@ Widget futurebrands({
                       image: DecorationImage(
                           image: NetworkImage(futurebranddata[index].image))),
                 )));
+
+Widget hotStyles({
+  required double hight,
+  required double width,
+  required double hight1,
+  required double width2,
+  required Color contanirColor,
+}) =>
+    Row(
+      children: List.generate(
+        hotRatedStyles.length,
+        (index) => Stack(children: [
+          Container(
+            alignment: Alignment.bottomCenter,
+            margin: const EdgeInsets.fromLTRB(3, 5, 3, 0),
+            padding: const EdgeInsets.only(bottom: 10),
+            height: hight,
+            width: width,
+            color: contanirColor,
+            child: Text(hotRatedStyles[index].price,
+                style: const TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold)),
+          ),
+          Container(
+            alignment: Alignment.bottomCenter,
+            height: hight1,
+            width: width2,
+            margin: const EdgeInsets.fromLTRB(3, 5, 0, 0),
+            decoration: BoxDecoration(
+              borderRadius: const BorderRadius.only(
+                  bottomLeft: Radius.circular(8),
+                  bottomRight: Radius.circular(8)),
+              image: DecorationImage(
+                  image: NetworkImage(hotRatedStyles[index].image),
+                  fit: BoxFit.fill),
+            ),
+            child: Text(hotRatedStyles[index].categorirs,
+                style:
+                    const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+          ),
+        ]),
+      ),
+    );
+
+Widget hotStyles1({
+  required double hight,
+  required double width,
+  required double hight1,
+  required double width2,
+  required Color contanirColor,
+}) =>
+    Row(
+      children: List.generate(
+        hotRatedStyles1.length,
+        (index) => Stack(children: [
+          Container(
+            alignment: Alignment.bottomCenter,
+            margin: const EdgeInsets.fromLTRB(3, 5, 3, 0),
+            padding: const EdgeInsets.only(bottom: 10),
+            height: hight,
+            width: width,
+            color: contanirColor,
+            child: Text(hotRatedStyles1[index].price,
+                style: const TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold)),
+          ),
+          Container(
+            alignment: Alignment.bottomCenter,
+            height: hight1,
+            width: width2,
+            margin: const EdgeInsets.fromLTRB(3, 5, 0, 0),
+            decoration: BoxDecoration(
+              borderRadius: const BorderRadius.only(
+                  bottomLeft: Radius.circular(8),
+                  bottomRight: Radius.circular(8)),
+              image: DecorationImage(
+                  image: NetworkImage(hotRatedStyles1[index].image),
+                  fit: BoxFit.fill),
+            ),
+            child: Text(hotRatedStyles1[index].categorirs,
+                style:
+                    const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+          ),
+        ]),
+      ),
+    );

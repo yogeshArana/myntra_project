@@ -123,7 +123,19 @@ class _FirstScreenState extends State<FirstScreen> {
                   colors2: Colors.white,
                   colors3: Colors.green),
               festival(height: 200, width: 120, contanirColor: Colors.white),
-              festival1(height: 200, width: 120, contanirColor: Colors.white)
+              festival1(height: 200, width: 120, contanirColor: Colors.white),
+              hotStyles(
+                  hight: 150,
+                  width: 110,
+                  hight1: 100,
+                  width2: 110,
+                  contanirColor: Colors.red),
+              hotStyles1(
+                  hight: 150,
+                  width: 110,
+                  hight1: 100,
+                  width2: 110,
+                  contanirColor: Colors.red)
             ],
           ),
         ),
