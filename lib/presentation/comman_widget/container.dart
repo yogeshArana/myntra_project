@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
+import 'package:myntra_project/data/model/app_menu.dart';
 
 Widget appbar({
   required double height,
@@ -49,21 +50,65 @@ Widget appbar({
 Widget festival(
         {required double height,
         required double width,
-        required String productImage,
-        required String categories,
-        required String price,
         required Color contanirColor}) =>
-    Container(
-      height: height,
-      width: width,
-      color: contanirColor,
-      child: Column(
-        children: [
-          Image(image: NetworkImage(productImage)),
-          Text(categories),
-          Text(price)
-        ],
-      ),
+    Row(
+      children: List.generate(
+          festivalOffer.length,
+          (index) => Padding(
+                padding: const EdgeInsets.fromLTRB(0, 5, 0, 2),
+                child: Container(
+                  height: height,
+                  width: width,
+                  color: contanirColor,
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 150,
+                        width: 120,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage(festivalOffer[index].image),
+                                fit: BoxFit.fill)),
+                      ),
+                      Text(festivalOffer[index].categorirs,
+                          style: const TextStyle(fontSize: 10)),
+                      Text(festivalOffer[index].price)
+                    ],
+                  ),
+                ),
+              )),
+    );
+Widget festival1(
+        {required double height,
+        required double width,
+        required Color contanirColor}) =>
+    Row(
+      children: List.generate(
+          festivalOffer1.length,
+          (index) => Padding(
+                padding: const EdgeInsets.fromLTRB(0, 5, 0, 2),
+                child: Container(
+                  height: height,
+                  width: width,
+                  color: contanirColor,
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 150,
+                        width: 120,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image:
+                                    NetworkImage(festivalOffer1[index].image),
+                                fit: BoxFit.fill)),
+                      ),
+                      Text(festivalOffer1[index].categorirs,
+                          style: const TextStyle(fontSize: 10)),
+                      Text(festivalOffer1[index].price)
+                    ],
+                  ),
+                ),
+              )),
     );
 
 Widget limitedtimebanner(

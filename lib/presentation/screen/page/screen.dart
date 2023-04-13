@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:myntra_project/data/model/app_menu.dart';
 import 'package:myntra_project/presentation/comman_widget/container.dart';
 import 'package:myntra_project/presentation/comman_widget/menu.dart';
 import 'package:myntra_project/presentation/screen/widget/frist_screen.dart';
@@ -121,6 +122,8 @@ class _FirstScreenState extends State<FirstScreen> {
                   colors1: Colors.white,
                   colors2: Colors.white,
                   colors3: Colors.green),
+              festival(height: 200, width: 120, contanirColor: Colors.white),
+              festival1(height: 200, width: 120, contanirColor: Colors.white)
             ],
           ),
         ),
