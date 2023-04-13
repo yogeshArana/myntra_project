@@ -1,8 +1,4 @@
-
-
-
-
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 Widget appbar({
   required double height,
@@ -44,6 +40,26 @@ Widget appbar({
           const SizedBox(
             width: 20,
           ),
+        ],
+      ),
+    );
+
+Widget festival(
+        {required double height,
+        required double width,
+        required String productImage,
+        required String categories,
+        required String price,
+        required Color contanirColor}) =>
+    Container(
+      height: height,
+      width: width,
+      color: contanirColor,
+      child: Column(
+        children: [
+          Image(image: NetworkImage(productImage)),
+          Text(categories),
+          Text(price)
         ],
       ),
     );
