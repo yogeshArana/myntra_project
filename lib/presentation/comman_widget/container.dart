@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
 import 'package:myntra_project/data/model/app_menu.dart';
+import 'package:myntra_project/data/model/crazy_deals.dart';
 import 'package:myntra_project/data/model/featured_brand.dart';
+import 'package:myntra_project/data/model/festival_deals.dart';
 
 Widget appbar({
   required double height,
@@ -130,16 +132,110 @@ Widget futurebrands({
   required double height,
   required double width,
 }) =>
-    Row(
+    SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+          children: List.generate(
+              futurebranddata.length,
+              (index) => Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: height,
+                      width: width,
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image:
+                                  NetworkImage(futurebranddata[index].image))),
+                    ),
+                  ))),
+    );
+
+Widget futurebanner(
+        {required double height,
+        required double width,
+        required String text,
+        required TextStyle style}) =>
+    // ignore: sized_box_for_whitespace
+    Container(
+      height: height,
+      width: width,
+      child: Center(child: Text(text, style: style)),
+    );
+
+Widget crazybanner(
+        {required double height,
+        required double width,
+        required String text,
+        required TextStyle style
+        // ignore: sized_box_for_whitespace
+        }) =>
+    // ignore: sized_box_for_whitespace
+    Container(
+      height: height,
+      width: width,
+      child: Center(child: Text(text)),
+    );
+
+Widget crazybrands({
+  required double height,
+  required double width,
+}) =>
+    SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+          children: List.generate(
+              crazydealdata.length,
+              (index) => Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: height,
+                      width: width,
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: NetworkImage(crazydealdata[index].image))),
+                    ),
+                  ))),
+    );
+
+Widget festivalbanaer({
+  required double height,
+  required double width,
+  required String text,
+  required TextStyle style,
+}) =>
+    // ignore: sized_box_for_whitespace
+    Container(
+      height: height,
+      width: width,
+      child: Center(
+        child: Text(
+          text,
+          style: style,
+        ),
+      ),
+    );
+
+Widget festivalproduct({
+  required double height,
+  required double width,
+}) =>
+    SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
         children: List.generate(
-            futurebranddata.length,
-            (index) => Container(
-                  height: height,
-                  width: width,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: NetworkImage(futurebranddata[index].image))),
-                )));
+            festivaldata.length,
+            (index) => Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: height,
+                    width: width,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: NetworkImage(festivaldata[index].image))),
+                  ),
+                )),
+      ),
+    );
 
 Widget hotStyles({
   required double hight,
